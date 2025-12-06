@@ -7,6 +7,14 @@ const Resume = () => {
     const currentVersion = resume.currentVersion;
     const resumeVersions = resume.versions[currentVersion];
 
+    // Helper to resolve paths with base URL for GitHub Pages
+    const getFullPath = (path) => {
+        if (!path) return null;
+        // Remove leading slash if present and add base URL
+        const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+        return `${import.meta.env.BASE_URL}${cleanPath}`;
+    };
+
     return (
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <motion.div
@@ -33,7 +41,7 @@ const Resume = () => {
                             <div className="flex flex-col gap-4 w-full max-w-xs">
                                 {resumeVersions.pdf && (
                                     <a
-                                        href={resumeVersions.pdf}
+                                        href={getFullPath(resumeVersions.pdf)}
                                         download={`Bala_Krishna_A_Resume_${currentVersion}.pdf`}
                                         className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors w-full"
                                     >
@@ -42,7 +50,7 @@ const Resume = () => {
                                 )}
                                 {resumeVersions.docx && (
                                     <a
-                                        href={resumeVersions.docx}
+                                        href={getFullPath(resumeVersions.docx)}
                                         download={`Bala_Krishna_A_Resume_${currentVersion}.docx`}
                                         className="flex items-center justify-center gap-2 px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg font-semibold transition-colors w-full"
                                     >
@@ -51,7 +59,7 @@ const Resume = () => {
                                 )}
                                 {resumeVersions.pdf && (
                                     <a
-                                        href={resumeVersions.pdf}
+                                        href={getFullPath(resumeVersions.pdf)}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="flex items-center justify-center gap-2 px-6 py-3 bg-slate-700 hover:bg-slate-600 text-white rounded-lg font-semibold transition-colors w-full"
@@ -73,7 +81,7 @@ const Resume = () => {
                     {resumeVersions?.pdf && (
                         <div className="w-full h-[800px] bg-slate-800 rounded-xl overflow-hidden border border-slate-700">
                             <iframe
-                                src={resumeVersions.pdf}
+                                src={getFullPath(resumeVersions.pdf)}
                                 className="w-full h-full"
                                 title="Resume Preview"
                             />
