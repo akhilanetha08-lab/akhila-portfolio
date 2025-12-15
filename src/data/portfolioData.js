@@ -2,152 +2,134 @@ import { Cloud, Server, Container, Code, Database, Shield } from 'lucide-react';
 
 export const portfolioData = {
     personalInfo: {
-        name: "Bala Krishna A",
-        role: "DevOps Engineer",
-        email: "abk971995@gmail.com",
-        phone: "+91-6304082149",
+        name: "Akhila A",
+        role: "CyberSecurity Specialist",
+        email: "akhila.netha08@gmail.com",
+        phone: "+91-7670989013",
         location: "India",
         socialLinks: {
-            linkedin: "https://www.linkedin.com/in/bala-krishna-addagatla-66620a16a/",
-            github: "https://github.com/balakrishna211221/",
-            gmail: "mailto:abk971995@gmail.com"
+            linkedin: "https://www.linkedin.com/in/akhila-a/",
+            github: "https://github.com/akhila-cybersec/",
+            gmail: "mailto:akhila.netha08@gmail.com"
         }
     },
     hero: {
-        title: "DevOps Engineer",
-        subtitle: "Automating the Future",
-        description: "Specializing in CI/CD, Kubernetes, Cloud Infrastructure, and Infrastructure as Code. Building scalable, secure, and efficient systems.",
+        title: "CyberSecurity Specialist",
+        subtitle: "Securing the Digital World",
+        description: "Specialized in penetration testing, vulnerability assessment, and network security, with expertise in ethical hacking and web application security. Proficient in using tools like BurpSuite, Wireshark, Metasploit, and Nmap to identify, exploit, and mitigate security risks.",
         floatingIcons: [
-            { icon: Cloud, label: 'AWS' },
-            { icon: Container, label: 'Kubernetes' },
-            { icon: Server, label: 'Terraform' },
-            { icon: Code, label: 'CI/CD' },
-            { icon: Database, label: 'Databases' },
-            { icon: Shield, label: 'Security' },
+            { icon: Cloud, label: 'Cloud Security' },
+            { icon: Shield, label: 'Network Security' },
+            { icon: Server, label: 'Infrastructure Security' },
+            { icon: Code, label: 'Ethical Hacking' },
+            { icon: Database, label: 'Database Security' },
+            { icon: Container, label: 'Container Security' },
         ]
     },
     about: {
         bio: [
-            "DevOps Engineer with 4 years of strong experience in CI/CD automation, AWS/Azure cloud infrastructure, container orchestration, Infrastructure as Code (Terraform), and cloud-native deployments. Skilled at optimizing delivery pipelines, automating infrastructure, improving release velocity, and ensuring high availability and scalability.",
-            "Strong hands-on expertise with Jenkins, GitHub Actions, Argo CD, Docker, Kubernetes (EKS/AKS), Ansible, Terraform, CloudWatch, and microservices architectures. Proven achievements in cost optimization, disaster recovery automation, observability, and DevSecOps practices."
+            "Passionate and skilled cybersecurity professional with hands-on experience in penetration testing, vulnerability management, and network security. Skilled in identifying system weaknesses and securing digital infrastructures using ethical hacking techniques.",
+            "Proficient in a wide range of security tools such as BurpSuite, Wireshark, SQLmap, and Metasploit. Well-versed in various cybersecurity domains, including cloud security, application security, and threat intelligence. Dedicated to staying updated on emerging cybersecurity trends and best practices."
         ],
         focusAreas: [
-            "Cloud Automation",
-            "Infrastructure as Code",
-            "Container Orchestration",
-            "DevSecOps",
-            "CI/CD"
-
+            "Penetration Testing",
+            "Vulnerability Assessment",
+            "Network Security",
+            "Web Application Security",
+            "Threat Intelligence",
+            "Cryptography"
         ]
     },
     experience: [
         {
-            title: "Courseware",
-            role: "DevOps Engineer",
+            title: "CyberSecurity Analyst",
+            role: "Security Operations Center (SOC) Analyst",
             responsibilities: [
-                "Designed and implemented CI/CD pipelines using Jenkins and GitHub Actions.",
-                "Managed AWS infrastructure using Terraform for scalable deployments.",
-                "Orchestrated containerized applications using Kubernetes (EKS)."
+                "Monitored network traffic and identified potential security threats using tools like Wireshark and Snort.",
+                "Performed vulnerability assessments and penetration tests on web applications and network infrastructure.",
+                "Assisted in the response to security incidents and implemented necessary remediation actions."
             ],
             achievements: [
-                "Reduced deployment time by 40% through automated pipelines.",
-                "Improved system reliability with proactive monitoring using Prometheus and Grafana."
+                "Reduced security incident response time by 30% through proactive monitoring and early threat detection.",
+                "Identified and mitigated multiple vulnerabilities in a live production environment, enhancing overall security posture."
             ],
-            tools: ["AWS", "Jenkins", "Terraform", "Kubernetes", "Docker"]
+            tools: ["Wireshark", "Metasploit", "Nmap", "BurpSuite"]
         },
         {
-            title: "DDP (Digital Delivery Platform)",
-            role: "DevOps Engineer",
+            title: "Vulnerability Assessment",
+            role: "Penetration Tester",
             responsibilities: [
-                "Automated cloud infrastructure provisioning with CloudFormation.",
-                "Implemented security best practices for IAM and network configurations.",
-                "Managed microservices deployment on ECS."
+                "Conducted manual and automated penetration tests on networks, servers, and web applications to identify vulnerabilities.",
+                "Provided detailed reports with exploitation techniques, risks, and remediation advice.",
+                "Worked with development teams to fix security issues and enhance the overall application security."
             ],
             achievements: [
-                "Achieved 99.9% uptime for critical delivery services.",
-                "Optimized cloud costs by 20% through resource rightsizing."
+                "Successfully discovered critical vulnerabilities, including SQL injection and XSS, leading to faster remediation and patching.",
+                "Improved the security posture of client systems by implementing industry best practices in vulnerability management."
             ],
-            tools: ["AWS ECS", "CloudFormation", "Python", "CloudWatch"]
+            tools: ["BurpSuite", "SQLmap", "Nikto", "OWASP ZAP"]
         },
         {
-            title: "FDC (Fulfillment Distribution Center)",
-            role: "DevOps Engineer",
+            title: "Cloud Security",
+            role: "Cloud Security Specialist",
             responsibilities: [
-                "Developed Ansible playbooks for configuration management.",
-                "Set up centralized logging using ELK stack.",
-                "Collaborated with development teams to streamline release processes."
+                "Secured cloud infrastructures using AWS and Azure security services, focusing on IAM, encryption, and data protection.",
+                "Audited cloud environments for compliance with security frameworks like GDPR and HIPAA.",
+                "Implemented network security measures, including VPNs, firewalls, and encryption protocols."
             ],
             achievements: [
-                "Standardized server configurations across multiple environments.",
-                "Enhanced troubleshooting capabilities with centralized logs."
+                "Enhanced cloud infrastructure security by implementing encryption and access controls, reducing potential attack vectors.",
+                "Successfully helped achieve 100% compliance with security regulations in cloud deployments."
             ],
-            tools: ["Ansible", "ELK Stack", "Linux", "Bash"]
+            tools: ["AWS", "Azure", "Terraform", "CloudWatch"]
         },
         {
-            title: "AIP (Analytics Insight Platform)",
-            role: "DevOps Engineer",
+            title: "Web Application Security",
+            role: "Security Tester",
             responsibilities: [
-                "Managed big data infrastructure on AWS EMR and Glue.",
-                "Implemented data pipeline automation using Airflow.",
-                "Ensured data security and compliance with encryption standards."
+                "Conducted security audits and assessments of web applications to identify OWASP Top 10 vulnerabilities.",
+                "Developed and executed attack simulations to identify and exploit potential security flaws.",
+                "Collaborated with development teams to ensure secure coding practices."
             ],
             achievements: [
-                "Scaled data processing capabilities to handle terabytes of daily data.",
-                "Automated data quality checks in the pipeline."
+                "Reduced the occurrence of critical vulnerabilities by 25% through proactive penetration testing.",
+                "Improved overall application security by incorporating security best practices during the development lifecycle."
             ],
-            tools: ["AWS EMR", "Glue", "Airflow", "S3"]
-        },
-        {
-            title: "OMS (Order Management System)",
-            role: "DevOps Engineer",
-            responsibilities: [
-                "Maintained IBM Sterling OMS infrastructure.",
-                "Automated database migrations and backups.",
-                "Supported high-volume transaction processing during peak seasons."
-            ],
-            achievements: [
-                "Zero downtime during major version upgrades.",
-                "Improved database performance through query optimization."
-            ],
-            tools: ["IBM Sterling OMS", "Oracle DB", "Jenkins", "Shell Scripting"]
+            tools: ["OWASP ZAP", "Nikto", "BurpSuite", "Kali Linux"]
         }
     ],
     skills: [
         {
-            title: "DevOps & CI/CD",
-            skills: ["Jenkins", "GitHub Actions", "Azure DevOps", "ArgoCD", "Maven", "Ant"]
+            title: "Penetration Testing & Ethical Hacking",
+            skills: ["BurpSuite", "Metasploit", "OWASP ZAP", "SQLmap", "Kali Linux", "Nmap", "Nikto"]
         },
         {
-            title: "Cloud Platforms",
-            skills: ["AWS (EC2, S3, EKS, ECS, VPC, IAM, Lambda)", "Azure (AKS, App Service)", "IBM Sterling OMS"]
+            title: "Network Security",
+            skills: ["Wireshark", "Snort", "Firewalls", "VPNs", "IDS/IPS"]
         },
         {
-            title: "IaC",
-            skills: ["Terraform", "CloudFormation"]
+            title: "Web Application Security",
+            skills: ["OWASP Top 10", "SQL Injection", "XSS", "CSRF", "Web Application Firewalls"]
         },
         {
-            title: "Containers & Orchestration",
-            skills: ["Docker", "Kubernetes (EKS/AKS/ECS)", "Helm"]
+            title: "Cryptography & Data Security",
+            skills: ["SSL/TLS", "AES", "RSA", "Encryption", "Hashing", "PGP"]
         },
         {
-            title: "Monitoring & Logging",
-            skills: ["Grafana", "Prometheus", "Nagios", "ELK Stack"]
+            title: "Cloud Security",
+            skills: ["AWS Security", "Azure Security", "IAM", "CloudFirewalls", "Encryption in Cloud"]
         },
         {
-            title: "Security",
-            skills: ["IAM", "SSL/TLS", "Secrets Manager", "Key Vault"]
-        },
-        {
-            title: "Scripting",
-            skills: ["Shell/Bash", "Python", "YAML", "JSON"]
+            title: "Vulnerability Management",
+            skills: ["Nessus", "OpenVAS", "Vulnerability Scanning", "Patch Management"]
         }
     ],
     resume: {
         currentVersion: "v1",
         versions: {
             v1: {
-                pdf: "/resumes/Bala_Krishna_A_Resume_v1.pdf",
-                docx: "/resumes/Bala_Krishna_A_Resume_v1.docx"
+                pdf: "/resumes/Akhila_A_Resume_v1.pdf",
+                docx: "/resumes/Akhila_A_Resume_v1.docx"
             }
         }
     }
